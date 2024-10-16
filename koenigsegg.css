@@ -1,0 +1,453 @@
+/* 1. Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background-color: #B9CDBB;
+    height: 23.543rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 2. Header Styles */
+
+.logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation {
+    padding: 3rem 0;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15rem;
+}
+
+header img {
+    width: 20%;
+    height: 100%;
+}
+
+header a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+    header {
+        height: 13rem;
+    }
+    header a {
+        font-size: 1.5rem;
+    }
+
+    .navigation {
+        padding: 1.5rem 0;
+    }
+
+    .navigation ul {
+        gap: 7rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    header {
+        height: 7rem;
+    }
+
+    header a {
+        font-size: 0.875rem;
+    }
+
+    .navigation {
+        padding: 0.875rem 0;
+    }
+
+    .navigation ul {
+        gap: 3rem;
+    }
+}
+
+/* 3. Mission Styles */
+.mission {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+    background-image: url('photo-1639696305208-5a4b2c58f734.avif');
+    background-size: cover;
+}
+
+.content {
+    width: 100%;
+    color: #000000;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h2 {
+    font-size: 3rem;
+}
+
+.content h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+    .mission {
+        height: 22rem;
+        margin: .6rem 0;
+    }
+    .content h2 {
+        font-size: 2rem;
+    }
+    
+    .content h3 {
+        font-size: 1.05rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .mission {
+        height: 13rem;
+        margin: .3rem 0;
+    }
+    .content h2 {
+        font-size: 1rem;
+    }
+    
+    .content h3 {
+        font-size: .7rem;
+    }
+}
+
+/* 4. Product Styles */
+#products-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products-text h2 {
+    font-size: 3rem;
+}
+
+.products-section h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1% 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#products-section .card img {
+    height: 20rem;
+    width: 28rem;
+}
+
+.jesko ,.agera {
+    margin: 0 1%;
+}
+
+.ccxr {
+    margin-left: 17.8%;
+}
+
+.cc850 {
+    margin-right: 17.8%;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+    #products-section .card img {
+        height: 14rem;
+        width: 22rem;
+    }
+
+    .cards {
+        margin-top: .5rem;
+    }
+
+    .card {
+        padding: 1% 0;
+    }
+
+    .products-text h2 {
+        font-size: 2rem;
+    }
+    
+    .products-section h3 {
+        font-size: 1.05rem;
+    }
+
+    .jesko ,.agera {
+        margin: 0 2%;
+    }
+
+    .gemera ,.ccxr {
+        margin: 0 2%;
+    }
+
+    .ccxr {
+        margin-left: 0;
+    }
+
+    .cc850 {
+        margin-left: 27.1%;
+        margin-right: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+    #products-section .card img {
+        height: 10rem;
+        width: 18rem;
+    }
+
+    .cards {
+        margin-top: .5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .card {
+        padding: 1% 0;
+    }
+
+    .products-text h2 {
+        font-size: 1rem;
+    }
+    
+    .products-section h3 {
+        font-size: .7rem;
+    }
+
+    .jesko, .agera {
+        margin: 0;
+    }
+
+    .ccxr {
+        margin-left: 0;
+    }
+
+    .cc850 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* 5. Team Styles */
+
+#team-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.team-text h2 {
+    font-size: 3rem;
+}
+
+.members {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background-color: #728A73;
+}
+
+.members img {
+    width: 18rem;
+    height: 30rem;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    color: white;
+}
+
+.member h2 {
+    font-size: 2.5rem;
+}
+
+.member h3 {
+    font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+    .members {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .member {
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+
+    .members img {
+        width: 16rem;
+        height: 22rem;
+    }
+
+    .member h2 {
+        font-size: 1.5rem;
+    }
+    
+    .member h3 {
+        font-size: 1rem;
+    }
+
+    .poppy, .tom {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .members {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .members img {
+        width: 14rem;
+        height: 20rem;
+    }
+
+    .member {
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+
+    .tom {
+        margin-bottom: 1rem;
+    }
+
+    .member h2 {
+        font-size: 2rem;
+    }
+    
+    .member h3 {
+        font-size: 1rem;
+    }
+}
+
+/* 6. Footer Styles */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+footer h4 {
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+.info {
+    margin: 1rem 0;
+}
+
+.phone {
+    margin-bottom: 1rem;
+}
+
+.copy {
+    margin: 1rem 0;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+    footer h2 {
+        font-size: 2.5rem;
+    }
+    
+    footer h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    footer h2 {
+        font-size: 2rem;
+    }
+
+    footer h4 {
+        font-size: .75rem;
+        align-items: center;
+    }
+}
